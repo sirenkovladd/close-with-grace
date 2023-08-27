@@ -1,7 +1,6 @@
 'use strict'
 
-const { promisify } = require('util')
-const sleep = promisify(setTimeout)
+const { setTimeout: sleep } = require('timers/promises')
 
 closeWithGrace.closing = false
 
